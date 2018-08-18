@@ -6,13 +6,13 @@ public class Main {
     public static void main(String[] args) {
 
 
-        String numPassport = "635992";
-        Pattern pattern = Pattern.compile("^[0-9]{1,7}$");
-        Matcher matcher = pattern.matcher(numPassport);
+        String whoGetPasport = "Ленинскй ОБЛ исполком";
+        Pattern pattern = Pattern.compile("^[А-яа-я\\s]{1,60}$");
+        Matcher matcher = pattern.matcher(whoGetPasport);
         if (matcher. matches()){
-            System.out.println("NumPassport is correct");
+            System.out.println("WhoGetPasport is correct");
         } else{
-            System.out.println("NumPassport is incorrect");
+            System.out.println("WhoGetPasport is incorrect");
 
         }
 
