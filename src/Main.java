@@ -6,13 +6,13 @@ public class Main {
     public static void main(String[] args) {
 
 
-        String name = "Иванов";
-        Pattern pattern = Pattern.compile("^[А-Яа-я]{4,16}$");
-        Matcher matcher = pattern.matcher(name);
+        String password = "rfhhfh56WQnc";
+        Pattern pattern = Pattern.compile("(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9@#$%]).{8,16}$");
+        Matcher matcher = pattern.matcher(password);
         if (matcher. matches()){
-            System.out.println("Name is correct");
+            System.out.println("Password is correct");
         } else{
-            System.out.println("Name is incorrect");
+            System.out.println("Password is incorrect");
 
         }
 
