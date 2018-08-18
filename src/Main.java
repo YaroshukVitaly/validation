@@ -6,14 +6,13 @@ public class Main {
     public static void main(String[] args) {
 
 
-        String email = "73rhru@mail.ru";
-        Pattern pattern = Pattern.compile("^[a-zA-Z0-9]{1,}"+"((\\.|\\_|-{0,1})[a-zA-Z0-9]{1,})*"+"@"
-        +"[a-zA-Z0-9]{1,}"+"((\\.|\\_|-{0,1})[a-zA-Z0-9]{1,})*"+"\\.[a-zA-Z]{2,}$");
-        Matcher matcher = pattern.matcher(email);
+        String name = "Иванов";
+        Pattern pattern = Pattern.compile("^[А-Яа-я]{4,16}$");
+        Matcher matcher = pattern.matcher(name);
         if (matcher. matches()){
-            System.out.println("Email is correct");
+            System.out.println("Name is correct");
         } else{
-            System.out.println("Email is incorrect");
+            System.out.println("Name is incorrect");
 
         }
 
