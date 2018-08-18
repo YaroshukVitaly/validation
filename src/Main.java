@@ -6,13 +6,13 @@ public class Main {
     public static void main(String[] args) {
 
 
-        String brand = "BMW";
-        Pattern pattern = Pattern.compile("^[A-za-z]{1,}$");
-        Matcher matcher = pattern.matcher(brand);
+        String year = "1988";
+        Pattern pattern = Pattern.compile("^\\d{4}$");
+        Matcher matcher = pattern.matcher(year);
         if (matcher. matches()){
-            System.out.println("Brand is correct");
+            System.out.println("Year is correct");
         } else{
-            System.out.println("Brand is incorrect");
+            System.out.println("Year is incorrect");
         }
 
     }
