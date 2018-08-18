@@ -6,13 +6,13 @@ public class Main {
     public static void main(String[] args) {
 
 
-        String seriesPassport = "BM";
-        Pattern pattern = Pattern.compile("^(?:AB|BM|HB|KH|MP|MC|KB|PP){1}$");
-        Matcher matcher = pattern.matcher(seriesPassport);
+        String expirtyDate = "05.2019";
+        Pattern pattern = Pattern.compile("^(0\\d|1[012])\\.(\\d{4})$");
+        Matcher matcher = pattern.matcher(expirtyDate);
         if (matcher. matches()){
-            System.out.println("SeriesPassport is correct");
+            System.out.println("ExpirtyDate is correct");
         } else{
-            System.out.println("SeriesPassport is incorrect");
+            System.out.println("ExpirtyDate is incorrect");
         }
 
     }
