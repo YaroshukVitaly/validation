@@ -6,13 +6,14 @@ public class Main {
     public static void main(String[] args) {
 
 
-        String phoneNum = "+375293113322";
-        Pattern pattern = Pattern.compile("^((\\+?375)([0-9]){9})$");
-        Matcher matcher = pattern.matcher(phoneNum);
+        String email = "73rhru@mail.ru";
+        Pattern pattern = Pattern.compile("^[a-zA-Z0-9]{1,}"+"((\\.|\\_|-{0,1})[a-zA-Z0-9]{1,})*"+"@"
+        +"[a-zA-Z0-9]{1,}"+"((\\.|\\_|-{0,1})[a-zA-Z0-9]{1,})*"+"\\.[a-zA-Z]{2,}$");
+        Matcher matcher = pattern.matcher(email);
         if (matcher. matches()){
-            System.out.println("Phone number is correct");
+            System.out.println("Email is correct");
         } else{
-            System.out.println("Phone number is incorrect");
+            System.out.println("Email is incorrect");
 
         }
 
