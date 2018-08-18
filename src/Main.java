@@ -6,13 +6,13 @@ public class Main {
     public static void main(String[] args) {
 
 
-        String numDriveDoc = "635992";
-        Pattern pattern = Pattern.compile("^[0-9]{1,6}$");
-        Matcher matcher = pattern.matcher(numDriveDoc);
+        String serialDriveDoc = "AA2";
+        Pattern pattern = Pattern.compile("^[0-9A-z]{1,3}$");
+        Matcher matcher = pattern.matcher(serialDriveDoc);
         if (matcher. matches()){
-            System.out.println("NumDriveDoc is correct");
+            System.out.println("SerialDriveDoc is correct");
         } else{
-            System.out.println("NumDriveDoc is incorrect");
+            System.out.println("SerialDriveDoc is incorrect");
         }
 
     }
