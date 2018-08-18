@@ -6,14 +6,13 @@ public class Main {
     public static void main(String[] args) {
 
 
-        String birthPlace = "Гродненская обл. г.Гродно";
-        Pattern pattern = Pattern.compile("^[А-яа-я\\s\\.\\,]{1,60}$");
-        Matcher matcher = pattern.matcher(birthPlace);
+        String numDriveDoc = "635992";
+        Pattern pattern = Pattern.compile("^[0-9]{1,6}$");
+        Matcher matcher = pattern.matcher(numDriveDoc);
         if (matcher. matches()){
-            System.out.println("BirthPlace is correct");
+            System.out.println("NumDriveDoc is correct");
         } else{
-            System.out.println("BirthPlace is incorrect");
-
+            System.out.println("NumDriveDoc is incorrect");
         }
 
     }
