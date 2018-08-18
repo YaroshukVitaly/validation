@@ -6,13 +6,13 @@ public class Main {
     public static void main(String[] args) {
 
 
-        String year = "1988";
-        Pattern pattern = Pattern.compile("^\\d{4}$");
-        Matcher matcher = pattern.matcher(year);
+        String mileage = "554300";
+        Pattern pattern = Pattern.compile("^[0-9]{1,}$");
+        Matcher matcher = pattern.matcher(mileage);
         if (matcher. matches()){
-            System.out.println("Year is correct");
+            System.out.println("Mileage is correct");
         } else{
-            System.out.println("Year is incorrect");
+            System.out.println("Mileage is incorrect");
         }
 
     }
