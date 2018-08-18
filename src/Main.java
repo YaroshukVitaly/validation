@@ -6,14 +6,13 @@ public class Main {
     public static void main(String[] args) {
 
 
-        String mileage = "554300";
+        String fuelСonsumption = "8";
         Pattern pattern = Pattern.compile("^[0-9]{1,}$");
-        Matcher matcher = pattern.matcher(mileage);
+        Matcher matcher = pattern.matcher(fuelСonsumption);
         if (matcher. matches()){
-            System.out.println("Mileage is correct");
+            System.out.println("FuelСonsumption is correct");
         } else{
-            System.out.println("Mileage is incorrect");
+            System.out.println("FuelСonsumption is incorrect");
         }
-
     }
 }
