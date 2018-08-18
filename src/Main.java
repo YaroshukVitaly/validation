@@ -6,13 +6,13 @@ public class Main {
     public static void main(String[] args) {
 
 
-        String expirtyDate = "05.2019";
-        Pattern pattern = Pattern.compile("^(0\\d|1[012])\\.(\\d{4})$");
-        Matcher matcher = pattern.matcher(expirtyDate);
+        String brand = "BMW";
+        Pattern pattern = Pattern.compile("^[A-za-z]{1,}$");
+        Matcher matcher = pattern.matcher(brand);
         if (matcher. matches()){
-            System.out.println("ExpirtyDate is correct");
+            System.out.println("Brand is correct");
         } else{
-            System.out.println("ExpirtyDate is incorrect");
+            System.out.println("Brand is incorrect");
         }
 
     }
