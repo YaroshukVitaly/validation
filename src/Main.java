@@ -6,13 +6,13 @@ public class Main {
     public static void main(String[] args) {
 
 
-        String whoGetPasport = "Ленинскй ОБЛ исполком";
+        String whoGetDriveDoc = "ГАИ Гродно";
         Pattern pattern = Pattern.compile("^[А-яа-я\\s]{1,60}$");
-        Matcher matcher = pattern.matcher(whoGetPasport);
+        Matcher matcher = pattern.matcher(whoGetDriveDoc);
         if (matcher. matches()){
-            System.out.println("WhoGetPasport is correct");
+            System.out.println("WhoGetDriveDoc is correct");
         } else{
-            System.out.println("WhoGetPasport is incorrect");
+            System.out.println("WhoGetDriveDoc is incorrect");
 
         }
 
